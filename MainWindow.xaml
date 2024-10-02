@@ -1,0 +1,25 @@
+﻿<Window x:Class="HelloWorldGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWorldGUI"
+        mc:Ignorable="d"
+        Title="Aphicha!" Height="364" Width="599">
+    <Grid Margin="0,0,25,24">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="717*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="52,198,0,0" TextWrapping="Wrap" Text="ชื่อคุณ" VerticalAlignment="Top" Width="73" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="123,197,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="151" Height="28" TextChanged="TextBox_TextChanged" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" Grid.Column="2"/>
+        <Button HorizontalAlignment="Left" Margin="123,240,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" Grid.Column="2">
+            <Button Content="Button" Click="Button_Click_2" RenderTransformOrigin="2.607,0.804"/>
+        </Button>
+        <Button Grid.Column="2" Content="Goodbye!" HorizontalAlignment="Left" Margin="375,240,0,0" VerticalAlignment="Top" BorderBrush="#FF30B961" Background="#FFC84C88" Click="Button_Click_1" Width="76" RenderTransformOrigin="2.807,0.603" Height="24"/>
+        <Button Grid.Column="2" HorizontalAlignment="Left" Margin="375,245,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Button Grid.Column="2" Content="How are you?" HorizontalAlignment="Left" Margin="237,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.653,0.453" Width="96" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>
